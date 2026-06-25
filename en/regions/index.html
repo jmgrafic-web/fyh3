@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Regions — Costa Brava, Maresme & Costa Dorada | FYH – Find Your House</title>
+  <meta name="description" content="Three exceptional coastlines. Each with its own character, property market, and lifestyle. Explore the Costa Brava, Maresme, and Costa Dorada with FYH.">
+  <link rel="canonical" href="https://findyourhouse.es/en/regions/">
+  <link rel="alternate" hreflang="en" href="https://findyourhouse.es/en/regions/">
+  <link rel="alternate" hreflang="nl" href="https://findyourhouse.es/nl/regions/">
+  <link rel="alternate" hreflang="fr" href="https://findyourhouse.es/fr/regions/">
+  <link rel="alternate" hreflang="es" href="https://findyourhouse.es/es/regions/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/fyh3/css/main.css">
+  <style>
+    .regions-hero {
+      padding: calc(var(--space-32) + 80px) var(--gutter) var(--space-16);
+      background: var(--color-white);
+    }
+    .region-card {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+      min-height: 520px;
+      text-decoration: none;
+      overflow: hidden;
+      transition: transform .4s ease;
+    }
+    .region-card:hover { transform: translateY(-4px); }
+    .region-card--reverse { direction: rtl; }
+    .region-card--reverse > * { direction: ltr; }
+    .region-card__image {
+      background-size: cover;
+      background-position: center;
+      min-height: 360px;
+    }
+    .region-card__body {
+      padding: var(--space-12) var(--space-10);
+      background: var(--color-white);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border: 1px solid var(--color-sand);
+    }
+    .region-card__towns {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-2);
+      margin-top: var(--space-6);
+    }
+    .region-card__town {
+      font-size: .75rem;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      color: var(--color-stone);
+      padding: .25rem .75rem;
+      border: 1px solid var(--color-sand-dark);
+    }
+    .region-card__cta {
+      display: inline-block;
+      margin-top: var(--space-8);
+      font-size: .8rem;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--color-med);
+      border-bottom: 1px solid var(--color-med);
+      padding-bottom: 2px;
+    }
+    @media (max-width: 768px) {
+      .region-card { grid-template-columns: 1fr; }
+      .region-card--reverse { direction: ltr; }
+      .region-card__image { min-height: 260px; }
+      .region-card__body { padding: var(--space-8); }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="nav scrolled" id="nav">
+  <a href="/fyh3/en/" class="nav__logo" style="color:var(--color-ink)">FYH</a>
+  <div class="nav__links">
+    <a href="/fyh3/en/regions/" class="nav__link" style="color:var(--color-ink);border-bottom:2px solid var(--color-ink)">Regions</a>
+    <a href="/fyh3/en/services/" class="nav__link" style="color:var(--color-stone-dark)">Services</a>
+    <a href="/fyh3/en/guides/" class="nav__link" style="color:var(--color-stone-dark)">Journal</a>
+    <a href="/fyh3/en/#contact" class="nav__link" style="color:var(--color-stone-dark)">Contact</a>
+  </div>
+  <div style="display:flex;align-items:center;gap:1.5rem">
+    <a href="/fyh3/en/#contact" class="nav__cta" style="color:var(--color-ink);border-color:var(--color-sand-dark)">Get in touch</a>
+    <button class="nav__hamburger" id="hamburger"><span style="background:var(--color-ink)"></span><span style="background:var(--color-ink)"></span><span style="background:var(--color-ink)"></span></button>
+  </div>
+</nav>
+<div class="nav__mobile" id="mobileMenu"><button class="nav__mobile-close" id="mobileClose">✕</button><a href="/fyh3/en/regions/">Regions</a><a href="/fyh3/en/services/">Services</a><a href="/fyh3/en/guides/">Journal</a><a href="/fyh3/en/#contact">Contact</a></div>
+
+<!-- Hero -->
+<section class="regions-hero">
+  <div class="container--narrow">
+    <nav style="display:flex;gap:.5rem;font-size:.75rem;letter-spacing:.06em;text-transform:uppercase;color:var(--color-stone);margin-bottom:2rem">
+      <a href="/fyh3/en/" style="color:var(--color-stone)">Home</a><span>/</span>
+      <span>Regions</span>
+    </nav>
+    <span class="eyebrow">Where to Buy</span>
+    <h1 class="display-lg mt-4">Three Coastlines.<br>One Expert Team.</h1>
+    <p class="lead mt-6" style="max-width:620px">The Catalan Coast stretches from the wild cliffs of the Costa Brava down through the Barcelona Maresme to the sun-drenched Costa Dorada. Each region has its own character, its own market, and its own particular appeal. We know all three intimately.</p>
+  </div>
+</section>
+
+<!-- Region cards -->
+<section style="padding:var(--space-4) 0 var(--space-24)">
+  <div class="container" style="display:flex;flex-direction:column;gap:var(--space-6)">
+
+    <!-- Costa Brava -->
+    <a href="/fyh3/en/regions/costa-brava/" class="region-card">
+      <div class="region-card__image" style="background-image:url('https://images.unsplash.com/photo-1543722530-d2c3201371e7?w=900&q=80')"></div>
+      <div class="region-card__body">
+        <span class="eyebrow">North Catalonia</span>
+        <h2 class="display-md mt-3">Costa Brava</h2>
+        <p style="color:var(--color-stone-dark);line-height:1.8;margin-top:1rem">Wild cliffs, hidden coves, medieval villages perched above turquoise water. The Costa Brava is the most dramatic and most sought-after coastline in Catalonia — and possibly the entire Mediterranean.</p>
+        <p style="color:var(--color-stone-dark);line-height:1.8;margin-top:.75rem">Strict planning protections have kept it from the overdevelopment that defines much of the Spanish coast. The result: a structurally undersupplied market where values have risen consistently and the lifestyle offer is genuinely irreplaceable.</p>
+        <div class="region-card__towns">
+          <span class="region-card__town">Begur</span>
+          <span class="region-card__town">Cadaqués</span>
+          <span class="region-card__town">Tamariu</span>
+          <span class="region-card__town">Llafranc</span>
+          <span class="region-card__town">Calella</span>
+          <span class="region-card__town">Palamós</span>
+        </div>
+        <span class="region-card__cta">Explore Costa Brava →</span>
+      </div>
+    </a>
+
+    <!-- Maresme -->
+    <a href="/fyh3/en/regions/costa-barcelona-maresme/" class="region-card region-card--reverse">
+      <div class="region-card__image" style="background-image:url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=900&q=80')"></div>
+      <div class="region-card__body">
+        <span class="eyebrow">Barcelona Coast</span>
+        <h2 class="display-md mt-3">Costa Barcelona — Maresme</h2>
+        <p style="color:var(--color-stone-dark);line-height:1.8;margin-top:1rem">The coast that runs north from Barcelona along the Maresme offers something unique on the Mediterranean: genuine coastal living within 30–40 minutes of one of Europe's great cities by train.</p>
+        <p style="color:var(--color-stone-dark);line-height:1.8;margin-top:.75rem">Sitges, Premià de Mar, Caldes d'Estrac — towns with real year-round communities, international schools nearby, and a property market driven by Barcelona professionals who want to live by the sea without sacrificing urban access.</p>
+        <div class="region-card__towns">
+          <span class="region-card__town">Sitges</span>
+          <span class="region-card__town">Vilanova</span>
+          <span class="region-card__town">Caldes d'Estrac</span>
+          <span class="region-card__town">Premià de Mar</span>
+          <span class="region-card__town">Arenys de Mar</span>
+        </div>
+        <span class="region-card__cta">Explore Maresme →</span>
+      </div>
+    </a>
+
+    <!-- Costa Dorada -->
+    <a href="/fyh3/en/regions/costa-dorada/" class="region-card">
+      <div class="region-card__image" style="background-image:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=900&q=80')"></div>
+      <div class="region-card__body">
+        <span class="eyebrow">South Catalonia</span>
+        <h2 class="display-md mt-3">Costa Dorada</h2>
+        <p style="color:var(--color-stone-dark);line-height:1.8;margin-top:1rem">The Golden Coast stretches south from Barcelona towards the Ebro Delta. Long sandy beaches, a warmer microclimate than the Costa Brava, and property prices that still offer genuine value compared to the north.</p>
+        <p style="color:var(--color-stone-dark);line-height:1.8;margin-top:.75rem">Tarragona — a UNESCO World Heritage Roman city — sits at its heart. The region suits buyers who want more beach, more sun, and more space for their budget, without sacrificing the Catalan quality of life.</p>
+        <div class="region-card__towns">
+          <span class="region-card__town">Tarragona</span>
+          <span class="region-card__town">Cambrils</span>
+          <span class="region-card__town">Miami Platja</span>
+          <span class="region-card__town">L'Hospitalet de l'Infant</span>
+          <span class="region-card__town">Salou</span>
+        </div>
+        <span class="region-card__cta">Explore Costa Dorada →</span>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+<!-- How we help -->
+<section style="padding:var(--space-24) var(--gutter);background:var(--color-ink)">
+  <div class="container container--narrow" style="text-align:center">
+    <span class="eyebrow" style="color:var(--color-stone)">Our Approach</span>
+    <h2 class="display-md mt-4" style="color:var(--color-white)">Not Sure Which Region?</h2>
+    <p style="color:var(--color-sand-dark);font-size:1.1rem;max-width:560px;margin:1.5rem auto 0;line-height:1.7">Tell us your priorities — lifestyle, access from home, budget, intended use — and we'll tell you where to focus. We know each market from the inside and have no interest in directing you to the wrong place.</p>
+    <a href="/fyh3/en/#contact" class="btn mt-8">Talk to us</a>
+  </div>
+</section>
+
+<footer style="background:var(--color-ink);color:var(--color-sand-dark);padding:var(--space-16) var(--gutter) var(--space-8);text-align:center;border-top:1px solid rgba(255,255,255,.06)">
+  <a href="/fyh3/en/" style="font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:300;color:var(--color-white);text-decoration:none;letter-spacing:.15em">FYH</a>
+  <p style="margin-top:var(--space-4);font-size:.875rem;opacity:.6">Find Your House — Architects helping international buyers on the Catalan Coast</p>
+  <div style="display:flex;gap:var(--space-6);justify-content:center;margin-top:var(--space-6);flex-wrap:wrap">
+    <a href="/fyh3/en/regions/costa-brava/" style="color:var(--color-stone);text-decoration:none;font-size:.875rem">Costa Brava</a>
+    <a href="/fyh3/en/regions/costa-barcelona-maresme/" style="color:var(--color-stone);text-decoration:none;font-size:.875rem">Maresme</a>
+    <a href="/fyh3/en/regions/costa-dorada/" style="color:var(--color-stone);text-decoration:none;font-size:.875rem">Costa Dorada</a>
+    <a href="/fyh3/en/services/" style="color:var(--color-stone);text-decoration:none;font-size:.875rem">Services</a>
+    <a href="/fyh3/en/guides/" style="color:var(--color-stone);text-decoration:none;font-size:.875rem">Journal</a>
+  </div>
+  <p style="margin-top:var(--space-8);font-size:.75rem;opacity:.4">© 2025 FYH – Find Your House. All rights reserved.</p>
+</footer>
+
+<script src="/fyh3/js/main.js"></script>
+</body>
+</html>
